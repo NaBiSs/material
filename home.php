@@ -1,6 +1,6 @@
 <?php include(dirname(__FILE__).'/header.php'); ?>
 
-	<main class="main">
+	<main>
 
 		<div class="container">
 

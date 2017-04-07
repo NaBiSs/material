@@ -1,8 +1,8 @@
 <?php if(!defined('PLX_ROOT')) exit; ?>
 
-	<aside class="aside col sml-12 med-4">
 
-		<h3>
+<ul id="slide-out" class="side-nav">
+    	<h3>
 			<?php $plxShow->lang('CATEGORIES'); ?>
 		</h3>
 
@@ -41,5 +41,7 @@
 		<ul class="arch-list unstyled-list">
 			<?php $plxShow->archList('<li id="#archives_id"><a class="#archives_status" href="#archives_url" title="#archives_name">#archives_name</a> (#archives_nbart)</li>'); ?>
 		</ul>
+</ul>
 
-	</aside>
+<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
