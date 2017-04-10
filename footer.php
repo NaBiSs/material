@@ -22,7 +22,10 @@
 	<script type="text/javascript" src="<?php $plxShow->template(); ?>/inc/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php $plxShow->template(); ?>/inc/materialize/dist/js/materialize.min.js"></script>
 	<script>
-		$(".second-nav").sideNav();
+		$(".second-nav").sideNav({
+			edge: 'right',
+			draggable: true
+		});
 	</script>
 </body>
 
