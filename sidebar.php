@@ -2,46 +2,26 @@
 
 
 <ul id="slide-out" class="side-nav">
-    	<h3>
-			<?php $plxShow->lang('CATEGORIES'); ?>
-		</h3>
+    	<li><a class="subheader"><i class="material-icons">view_list</i><?php $plxShow->lang('CATEGORIES'); ?></a></h3>
 
-		<ul class="cat-list unstyled-list">
-			<?php $plxShow->catList('','<li id="#cat_id"><a class="#cat_status" href="#cat_url" title="#cat_name">#cat_name</a> (#art_nb)</li>'); ?>
-		</ul>
+		<?php $plxShow->catList('','<li id="#cat_id"><a class="waves-effect #cat_status" href="#cat_url" title="#cat_name">#cat_name (#art_nb)</a> </li>'); ?>
+		
 
-		<h3>
-			<?php $plxShow->lang('LATEST_ARTICLES'); ?>
-		</h3>
+		<li><a class="subheader"><i class="material-icons">trending_up</i><?php $plxShow->lang('LATEST_ARTICLES'); ?></a></li>
 
-		<ul class="lastart-list unstyled-list">
-			<?php $plxShow->lastArtList('<li><a class="#art_status" href="#art_url" title="#art_title">#art_title</a></li>'); ?>
-		</ul>
+		<?php $plxShow->lastArtList('<li><a class="waves-effect #art_status" href="#art_url" title="#art_title">#art_title</a></li>'); ?>
 
-		<h3>
-			<?php $plxShow->lang('TAGS'); ?>
-		</h3>
+		<li><a class="subheader"><i class="material-icons">label_outline</i><?php $plxShow->lang('TAGS'); ?></a></li>
 
-		<ul class="tag-list">
-			<?php $plxShow->tagList('<li class="tag #tag_size"><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a></li>'); ?>
-		</ul>
+		<?php $plxShow->tagList('<li class="waveseffect tag #tag_size"><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a></li>'); ?>
 
-		<h3>
-			<?php $plxShow->lang('LATEST_COMMENTS'); ?>
-		</h3>
+		<li><a class="subheader"><i class="material-icons">comment</i><?php $plxShow->lang('LATEST_COMMENTS'); ?></a></li>
 
-		<ul class="lastcom-list unstyled-list">
-			<?php $plxShow->lastComList('<li><a href="#com_url">#com_author '.$plxShow->getLang('SAID').' : #com_content(34)</a></li>'); ?>
-		</ul>
+		<?php $plxShow->lastComList('<li><a href="#com_url">#com_author '.$plxShow->getLang('SAID').' : #com_content(23)</a></li>'); ?>
 
-		<h3>
-			<?php $plxShow->lang('ARCHIVES'); ?>
-		</h3>
+		<li><a class="subheader"><i class="material-icons">restore</i><?php $plxShow->lang('ARCHIVES'); ?></a></li>
 
-		<ul class="arch-list unstyled-list">
-			<?php $plxShow->archList('<li id="#archives_id"><a class="#archives_status" href="#archives_url" title="#archives_name">#archives_name</a> (#archives_nbart)</li>'); ?>
-		</ul>
+		<?php $plxShow->archList('<li id="#archives_id"><a class="#archives_status" href="#archives_url" title="#archives_name">#archives_name (#archives_nbart)</a></li>'); ?>
 </ul>
 
-<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
